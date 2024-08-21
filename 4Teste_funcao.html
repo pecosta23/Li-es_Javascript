@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<meta name ="viewport" content="width-device-width, initial-scale=1">
+<!---->
+<script>
+
+    alert("Teste de Funções");
+
+    function pulalinha(){
+        document.write("<br><br>");
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulalinha();
+    }
+    var ano = 2023;
+
+    mostra("Teste de texto em função, esse texto deve exibir<br> literalmente isso o que eu estou escrevendo.");
+
+    mostra("Diego tem " + (ano - 1968) + " anos" );
+    mostra("Flávia tem " + (ano - 1976) + " anos" );
+
+    ano = 2024
+
+    mostra("Desulpe, Diego e Flávia na verdade tem respectivamente <br>" + (ano - 1968) + " e " + (ano - 1976) + " anos");
+
+    var media = (56 + 48)/2;
+
+    mostra("A média das idades é de " + Math.round(media));
+
+</script>

@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<input type="placeholder"><br><br>
+<button>Compare seu chute com o número secreto</button>
+<script>
+    var secret = Math.round(Math.random() * 10);
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verifica(){
+        if(input.value == secret){
+            alert("você acertou!");
+        } else {
+            alert("Você errou!");
+        }
+        input.value = "";
+        input.focus();
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+</script>

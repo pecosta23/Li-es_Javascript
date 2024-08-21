@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<script>
+    function pulalinha(){
+        document.write("<br><br>");
+
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulalinha();
+
+    }
+    
+    var numeropensado = Math.round(Math.random()*10);
+    var tenta = 1;
+
+    while(tenta <= 3){
+        var guess = parseInt(prompt("Digite seu chute de 0 à 10:"));
+
+        if(guess == numeropensado){
+            mostra("Você acertou!");
+            break;
+        } else {
+            mostra("Você errou, tente novamente.");
+        }
+        tenta++;
+    }
+    mostra("FIM.");
+</script>

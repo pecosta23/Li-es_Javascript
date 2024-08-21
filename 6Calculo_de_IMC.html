@@ -1,0 +1,35 @@
+<meta charset = "UTF-8">
+<meta name ="viewport" content="width-device-width, initial-scale=1">
+<script>
+    function pulalinha(){
+        document.write("<br><br>");
+        
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulalinha();
+    
+    }
+
+    var pesopedro = 64;
+    var alturapedro = 1.71;
+
+    var imcpedro = pesopedro / (alturapedro * alturapedro);
+
+    mostra("O IMC do Pedro é " + Math.round(imcpedro));
+
+    var pesoamigo = 74;
+    var alturaamigo = 1.81;
+
+    var imcamigo = pesoamigo / (alturaamigo * alturaamigo);
+    mostra("O IMC do amigo é " + Math.round(imcamigo));
+
+    function calculaimc(peso, altura){
+        var imc = peso /(altura * altura);
+        mostra("O IMC é de " + imc);
+    }
+
+    calculaimc(64, 1.71);
+
+   
+</script>

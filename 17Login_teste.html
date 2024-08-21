@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<script>
+
+    var logincadastrado = "oi12";
+    var senhacadastrada = "coe123";
+
+    var maxtenta = 3;
+    var tentaatu = 1;
+
+    while(tentaatu <= maxtenta){
+
+        var logininformado = prompt("Informe seu login: ");  
+        var senhainformada = prompt("Digite sua senha: ");
+
+        if(logincadastrado == logininformado && senhacadastrada == senhainformada){
+            alert("Bem vindo "+logininformado);
+
+            maxtenta = tentaatu;
+        
+        } else {
+            if(tentaatu == 3){
+                alert("Número máximo de tentativas atingido");
+            } else {
+                alert("Login Inválido.");
+            }
+        }
+        tentaatu = tentaatu + 1;
+    }
+
+    
+</script>

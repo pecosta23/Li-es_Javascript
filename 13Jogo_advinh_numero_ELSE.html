@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    function pulalinha(){
+        document.write("<br><br>");
+
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulalinha();
+
+    }
+    var numeroPensado = 8;
+    var chute = parseInt(prompt("Digitee um número de 1 à 10:"));
+
+    if(chute == numeroPensado){
+        mostra("Parabéns, você acertou!");
+    } else {
+        mostra("Você errou, o número pensado era: "+ numeroPensado);
+    }
+</script>

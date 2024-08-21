@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<meta name ="viewport" content="width-device-width, initial-scale=1"> 
+<script>
+    function pulalinha(){
+        document.write("<br><br>");
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulalinha();
+
+    }
+    function calculaimc(altura, peso){
+        return peso / (altura * altura);
+    }
+    var imcAmigo = calculaimc(1.78, 74);
+    var imcPedro = calculaimc(1.71, 64);
+
+    var totalimc = imcAmigo + imcPedro;
+
+    document.write("Os IMC's somados totalizam em " + Math.round(totalimc));
+</script>
